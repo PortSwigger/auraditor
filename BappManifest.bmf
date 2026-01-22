@@ -9,5 +9,5 @@ ProOnly: False
 Author: Soroush Dalili
 ShortDescription: Security testing toolkit for Salesforce Lightning and Aura framework applications
 EntryPoint: auraditor-2.0.5.jar
-BuildCommand: mvn clean install && mvn test
+BuildCommand: mvn clean install
 SupportedProducts: Pro, Community
