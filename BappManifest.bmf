@@ -3,7 +3,7 @@ ExtensionType: 1
 Name: Auraditor, Salesforce Aura and Lightning (LWC) Helper
 RepoName: auraditor
 ScreenVersion: 2.0.2
-SerialVersion: 1
+SerialVersion: 2
 MinPlatformVersion: 25
 ProOnly: False
 Author: Soroush Dalili
