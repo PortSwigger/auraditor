@@ -1,77 +1,30 @@
-<p>Auraditor is a Burp Suite extension developed for security testing Salesforce Lightning and Aura framework applications. This tool has comprehensive audit capabilities along with advanced action management, and context editing. Always use this tool responsibly and ensure you have proper authorization before testing any systems. The tool is provided without any support, warranty, or liability from the developer.</p>
+<p>
+    Auraditor is a security testing extension for Salesforce Lightning and Aura framework applications. It provides
+    comprehensive audit capabilities including action management, endpoint discovery, route testing, and specialized
+    tools for analyzing Salesforce IDs. This extension is designed for authorized security testing only.
+</p>
 
 <h2>Features</h2>
-
-<p>
-<strong>Request Editor:</strong><br/>
-Here are the main features of the Request Editor:
 <ul>
-<li>View and edit Aura actions in HTTP requests</li>
-<li>Add and remove actions using tabs</li>
-<li>Edit controller names and method names</li>
-<li>Modify JSON parameters for each action</li>
-<li>Handle invalid JSON according to user preference</li>
-<li>Copy, cut, and paste in text fields</li>
-<li>Toggle line wrapping for better readability</li>
+    <li>Edit Aura actions directly in HTTP requests with tabbed interface for adding, removing, and modifying controller
+        names, method names, and JSON parameters</li>
+    <li>Discover Aura controllers, methods, and Lightning Web Component endpoints by analyzing JavaScript files and
+        application routes</li>
+    <li>Test discovered routes automatically, categorize responses, and export results for analysis</li>
+    <li>Analyze and manipulate Salesforce IDs with tools for converting between 15 and 18-character formats, generating
+        sequential IDs, and creating custom Intruder payloads</li>
+    <li>Save and manage multiple base requests from HTTP history for reuse in testing operations</li>
 </ul>
-</p>
-
-<p>
-<strong>Base Requests Management:</strong><br/>
-The Base Requests Management feature allows you to:
-<ul>
-<li>Save multiple base requests from HTTP history</li>
-<li>Tag requests with custom names</li>
-<li>Use saved requests for security testing operations</li>
-</ul>
-</p>
-
-<p>
-<strong>Discovery Operations:</strong><br/>
-The Discovery Operations feature can:
-<ul>
-<li>Find Aura controllers and methods from JavaScript files</li>
-<li>Discover Lightning Web Component (LWC) endpoints</li>
-<li>Extract API routes from application files</li>
-<li>Search for objects by name in the application</li>
-</ul>
-</p>
-
-<p>
-<strong>Route Testing:</strong><br/>
-With Route Testing, you can:
-<ul>
-<li>Test discovered routes automatically</li>
-<li>Categorize routes by response type</li>
-<li>Export results to files</li>
-</ul>
-</p>
-
-<p>
-<strong>Salesforce ID Tools:</strong><br/>
-Salesforce ID Tools lets you:
-<ul>
-<li>Analyze Salesforce ID structure and format</li>
-<li>Convert between 15-character and 18-character IDs</li>
-<li>Generate sequential Salesforce IDs</li>
-<li>Create custom ID payload generators for Burp Intruder</li>
-<li>Change decimal values in Salesforce IDs</li>
-</ul>
-</p>
 
 <h2>Usage</h2>
-<p>
-Auraditor has a simple and intuitive interface that makes using these features easy, even for beginners. The Request Editor allows for the viewing and editing of Aura actions in HTTP requests. Actions can be added or removed using tabs. Controller names, method names, and JSON parameters for each action can be modified. The user can choose how to handle invalid JSON. Useful text editing features are available like copy, cut, and paste. Line wrapping can be toggled for better readability.
-</p>
-<p>
-In terms of Base Requests Management, multiple base requests can be saved from HTTP history, tagged with custom names, and then be used for security testing operations.
-</p>
-<p>
-For Discovery Operations, the extension can find Aura controllers and methods from JavaScript files, discover Lightning Web Component (LWC) endpoints, extract API routes from application files, and can even search for specific objects by name within the application.
-</p>
-<p>
-The Route Testing feature can test discovered routes automatically, categorize them by response type, and the results can then be exported to files.
-</p>
-<p>
-Finally, the Salesforce ID Tools are helpful for analyzing the Salesforce ID structure and format, converting between 15-character and 18-character IDs, generating sequential Salesforce IDs, creating custom ID payload generators for Burp Intruder, and changing decimal values in Salesforce IDs.
-</p>
+<ol>
+    <li>Send an Aura framework request to Auraditor using the context menu, or add a compatible request from the main
+        tab</li>
+    <li>Use the Request Editor tabs to view and modify Aura actions, including controller names, methods, and parameters
+    </li>
+    <li>Run discovery operations from the Actions tab to identify controllers, methods, and routes from JavaScript files
+    </li>
+    <li>Test discovered routes automatically and review categorized results</li>
+    <li>Use the Salesforce ID Lab to analyze ID structure, convert formats, or generate custom payloads for Intruder
+        attacks</li>
+</ol>
