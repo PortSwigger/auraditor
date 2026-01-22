@@ -1,0 +1,13 @@
+Uuid: 9187559a7b634b83abc76f828203c355
+ExtensionType: 1
+Name: Auraditor, Salesforce Aura and Lightning (LWC) Helper
+RepoName: auraditor
+ScreenVersion: 2.0.2
+SerialVersion: 1
+MinPlatformVersion: 25
+ProOnly: False
+Author: Soroush Dalili
+ShortDescription: This extension facilitates security testing of Salesforce Lightning/Aura framework applications. It provides advanced action management, context editing, and comprehensive audit features.
+EntryPoint: auraditor-2.0.5.jar
+BuildCommand: mvn clean install && mvn test
+SupportedProducts: Pro, Community
